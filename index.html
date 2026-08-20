@@ -7,33 +7,320 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>RongKon KH</title>
   </head>
   <body class="bg-[#fff] h-[2000px]">
-    <header class="w-full h-[70px] bg-gray-200 sticky z-50 top-0">
+    <header class="w-full h-[70px] bg-[#fff] sticky z-50 top-0">
       <nav class="w-[90%] h-full m-auto flex justify-between items-center">
         <!-- img logo -->
         <div class="flex gap-1 items-center">
           <img
-            class="w-[70px]"
+            class="w-[90px]"
             src="/img/RongKon_KH_logo.png"
             alt="RongKon KH Logo"
           />
-          <div class="uppercase font-bold">RongKon KH</div>
+          <div class="uppercase font-bold text-amber-600 text-[20px]">
+            RongKon KH
+          </div>
         </div>
-        <div>eded</div>
+        <section class="flex justify-between gap-[100px] items-center">
+          <!-- Center Nav Search-->
+          <div
+            class="p-3 pl-[30px] w-[400px] text-gray-400 rounded-full border-b-cyan-100 bg-[rgba(137,143,141,0.1)] gap-2 text-[18px] font-medium"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="outline-none" type="search" placeholder="search" />
+          </div>
+          <!-- left Nav -->
+          <div>
+            <ul
+              class="flex gap-[30px] capitalize text-[18px] font-medium text-amber-600"
+            >
+              <li>
+                <a class="flex items-center gap-[10px]" href=""
+                  ><i class="fa-regular fa-house"></i><span>home</span></a
+                >
+              </li>
+              <li>
+                <a class="flex items-center gap-[10px]" href=""
+                  ><i class="fa-solid fa-location-dot"></i
+                  ><span>location</span></a
+                >
+              </li>
+              <li>
+                <a class="flex items-center gap-[10px]" href=""
+                  ><i class="fa-solid fa-ticket"></i><span>tickets</span></a
+                >
+              </li>
+              <li>
+                <a class="flex items-center gap-[10px]" href="">coming soon</a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </nav>
+      <div class="w-full h-[1px] bg-gray-300"></div>
     </header>
 
     <!-- Mainof Contain -->
     <main>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, distinctio,
-      laudantium at fugit neque consequatur odit architecto quis perferendis
-      vero similique expedita omnis modi ex consequuntur porro veritatis aperiam
-      dolores.
+      <!-- Swiper img slide -->
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide
+          ><img
+            src="https://thumbnail.primecineplex.com/Thumbnail/HeroBanner/herobanner20260814150852.jpg"
+            alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://thumbnail.primecineplex.com/Thumbnail/HeroBanner/herobanner20260814153117.jpg"
+            alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://thumbnail.primecineplex.com/Thumbnail/HeroBanner/herobanner20260814153117.jpg"
+            alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://thumbnail.primecineplex.com/Thumbnail/HeroBanner/herobanner20260127101818.jpg"
+            alt=""
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="https://thumbnail.primecineplex.com/Thumbnail/HeroBanner/herobanner20260814150829.jpg"
+            alt=""
+        /></swiper-slide>
+
+        <div class="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </swiper-container>
+
+      <!-- Showing -->
+      <section class="w-[80%] h-auto m-auto mt-[50px]">
+        <!-- Show now and coming soon -->
+        <div class="capitalize text-4xl font-bold text-amber-500">
+          <a class="hover:text-amber-600" href="">show now</a>
+          <span>|</span>
+          <a class="hover:text-amber-600" href="">coming soon</a>
+        </div>
+
+        <!-- Movies card -->
+        <section class="mt-[50px] flex justify-between">
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href="">
+              <img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000270"
+                alt=""
+              />
+              <!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div>
+            </a>
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href=""
+              ><img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000314"
+                alt=""
+              />
+              <!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href="">
+              <img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000320"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href="">
+              <img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000321"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+        </section>
+        <section class="mt-[20px] flex justify-between">
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href=""
+              ><img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000305"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href=""
+              ><img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000323"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href="">
+              <img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000322"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href="">
+              <img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000215"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+        </section>
+        <section class="mt-[20px] flex justify-between">
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href=""
+              ><img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000296"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href="">
+              <img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000324"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href=""
+              ><img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000325"
+                alt=""
+              />
+              <!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+          <div class="w-[280px] h-[450px] rounded-2xl">
+            <a href=""
+              ><img
+                class="w-full h-[80%] rounded-t-2xl"
+                src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000213"
+                alt=""
+              /><!-- Movie Release -->
+              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+                18 Aug 2026
+              </div>
+              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+                NUTINY
+              </div></a
+            >
+          </div>
+        </section>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
   </body>
 </html>
