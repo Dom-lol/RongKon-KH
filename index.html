@@ -16,57 +16,75 @@
     />
     <title>RongKon KH</title>
   </head>
-  <body class="bg-[#fff] h-[2000px]">
-    <header class="w-full h-[70px] bg-[#fff] sticky z-50 top-0">
+  <body class="bg-[#171717] h-[2000px]">
+    <header class="w-full h-[70px] bg-[#171717] sticky z-50 top-0">
       <nav class="w-[90%] h-full m-auto flex justify-between items-center">
         <!-- img logo -->
-        <div class="flex gap-1 items-center">
+        <a href="" class="flex gap-1 items-center">
           <img
-            class="w-[90px]"
+            class="w-[70px]"
             src="/img/RongKon_KH_logo.png"
             alt="RongKon KH Logo"
           />
-          <div class="uppercase font-bold text-amber-600 text-[20px]">
+          <div class="uppercase font-bold text-[#fff] text-[16px]">
             RongKon KH
           </div>
-        </div>
+        </a>
         <section class="flex justify-between gap-[100px] items-center">
           <!-- Center Nav Search-->
           <div
-            class="p-3 pl-[30px] w-[400px] text-gray-400 rounded-full border-b-cyan-100 bg-[rgba(137,143,141,0.1)] gap-2 text-[18px] font-medium"
+            class="p-2 pl-[30px] w-[400px] text-gray-400 rounded-full border-b-cyan-100 bg-[rgba(237,237,237,0.1)] gap-2 text-[15px] font-medium"
           >
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input class="outline-none" type="search" placeholder="search" />
+            <input class="outline-none" type="text" placeholder="search" />
           </div>
           <!-- left Nav -->
           <div>
             <ul
-              class="flex gap-[30px] capitalize text-[18px] font-medium text-amber-600"
+              class="flex gap-[20px] capitalize text-[14px] font-medium text-[#fff]"
             >
               <li>
-                <a class="flex items-center gap-[10px]" href=""
+                <a
+                  class="flex items-center gap-[5px] hover:text-amber-600 transition duration-300 ease-in-out"
+                  href=""
                   ><i class="fa-regular fa-house"></i><span>home</span></a
                 >
               </li>
               <li>
-                <a class="flex items-center gap-[10px]" href=""
+                <a
+                  class="flex items-center gap-[5px] hover:text-amber-600 transition duration-300 ease-in-out"
+                  href=""
                   ><i class="fa-solid fa-location-dot"></i
                   ><span>location</span></a
                 >
               </li>
               <li>
-                <a class="flex items-center gap-[10px]" href=""
+                <a
+                  class="flex items-center gap-[5px] hover:text-amber-600 transition duration-300 ease-in-out"
+                  href=""
                   ><i class="fa-solid fa-ticket"></i><span>tickets</span></a
                 >
               </li>
               <li>
-                <a class="flex items-center gap-[10px]" href="">coming soon</a>
+                <a
+                  class="flex items-center gap-[5px] hover:text-amber-600 transition duration-300 ease-in-out"
+                  href=""
+                  >coming soon</a
+                >
               </li>
             </ul>
           </div>
+          <a href="" class="flex gap-[5px] items-center font-bold">
+            <div class="bg-gray-500 w-[30px] h-[30px] rounded-[50%]">
+              <i
+                class="fa-regular fa-user text-[#fff] text-[15px] w-[100%] h-[90%] items-center flex justify-center"
+              ></i>
+            </div>
+            <div class="text-[#b7b7b7] text-[13px]">Chea Oudom</div>
+          </a>
         </section>
       </nav>
-      <div class="w-full h-[1px] bg-gray-300"></div>
+      <div class="w-full h-[1px] bg-[#656464]"></div>
     </header>
 
     <!-- Mainof Contain -->
@@ -117,16 +135,33 @@
       </swiper-container>
 
       <!-- Showing -->
-      <section class="w-[80%] h-auto m-auto mt-[50px]">
-        <!-- Show now and coming soon -->
-        <div class="capitalize text-4xl font-bold text-amber-500">
-          <a class="hover:text-amber-600" href="">show now</a>
-          <span>|</span>
-          <a class="hover:text-amber-600" href="">coming soon</a>
-        </div>
+      <section class="w-[80%] h-auto m-auto mt-[30px]">
+        <section class="flex justify-between items-center">
+          <!-- Show now and coming soon -->
+          <div class="capitalize text-4xl font-bold text-[#b7b7b7]">
+            <a
+              class="hover:text-amber-600 transition duration-300 ease-in-out"
+              href=""
+              >show now</a
+            >
+            <span>|</span>
+            <a
+              class="hover:text-amber-600 transition duration-300 ease-in-out"
+              href=""
+              >coming soon</a
+            >
+          </div>
+
+          <!-- All Location -->
+          <a href="" class="text-[16px] flex gap-1.5 items-center" href="">
+            <i class="fa-solid fa-location-dot text-red-700"></i>
+            <div class="text-[#b7b7b7] capitalize font-bold">all location</div>
+            <i class="fa-solid fa-chevron-down text-[#b7b7b7]"></i
+          ></a>
+        </section>
 
         <!-- Movies card -->
-        <section class="mt-[50px] flex justify-between">
+        <section class="mt-[30px] flex justify-between">
           <div class="w-[280px] h-[450px] rounded-2xl">
             <a href="">
               <img
@@ -135,12 +170,10 @@
                 alt=""
               />
               <!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
-                NUTINY
-              </div>
+              <div class="text-[15px] font-medium text-amber-600">NUTINY</div>
             </a>
           </div>
           <div class="w-[280px] h-[450px] rounded-2xl">
@@ -151,10 +184,10 @@
                 alt=""
               />
               <!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -166,10 +199,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000320"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -181,10 +214,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000321"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -198,10 +231,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000305"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -213,10 +246,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000323"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -228,10 +261,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000322"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -243,10 +276,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000215"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -260,10 +293,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000296"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -275,10 +308,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000324"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -291,10 +324,10 @@
                 alt=""
               />
               <!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
@@ -306,10 +339,10 @@
                 src="https://legen-digital-cdn.app.vista.co/media/entity/get/FilmPosterGraphic/HO00000213"
                 alt=""
               /><!-- Movie Release -->
-              <div class="text-[18px] font-medium mt-[5px] text-gray-600">
+              <div class="text-[15px] font-medium mt-[5px] text-white">
                 18 Aug 2026
               </div>
-              <div class="text-[18px] font-medium mt-[5px] text-amber-600">
+              <div class="text-[15px] font-medium text-amber-600">
                 NUTINY
               </div></a
             >
